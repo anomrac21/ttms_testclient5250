@@ -1,6 +1,6 @@
-baseURL = 'https://{{CLIENT_NAME}}.ttmenus.com/'
+baseURL = 'https://testclient5250.ttmenus.com/'
 languageCode = 'en-tt'
-title = '{{SITE_TITLE}}'
+title = 'Test Restaurant 5250'
 theme = '_menus_ttms'
 
 [params]
@@ -17,17 +17,17 @@ theme = '_menus_ttms'
 [params.content]
   enabled = true
   apiUrl = "https://content.ttmenus.com/api"
-  clientId = "ttms_{{CLIENT_NAME}}"
+  clientId = "ttms_testclient5250"
 
 # Ads Service Configuration
 [params.ads]
   enabled = true
   apiUrl = "https://ads.ttmenus.com/api/v1"
-  clientId = "ttms_{{CLIENT_NAME}}"
+  clientId = "ttms_testclient5250"
 
 [params.services]
   onesignalid = ""
-  analyticsid = {{ANALYTICS_ID}}
+  analyticsid = 0
   notifications = true
 
 [params.features]
@@ -39,7 +39,7 @@ theme = '_menus_ttms'
   vat = 0
   servicecharge = 0
   hastables = true
-  whatsapp = {{WHATSAPP}}
+  whatsapp = 18684664747
 
 [params.orderingmenu]
   sidesname = "Rolls"
@@ -50,8 +50,8 @@ theme = '_menus_ttms'
   instagram = ""
   tiktok = ""
   youtube = ""
-  email = "{{EMAIL}}"
-  phone = {{PHONE}}
+  email = "test5250@example.com"
+  phone = 18684664747
   
 [markup]
   [markup.goldmark]
