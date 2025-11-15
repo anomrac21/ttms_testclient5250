@@ -1,0 +1,22 @@
+name: Deploy to Netlify
+
+on:
+  push:
+    branches: [ master ]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Trigger Netlify Build Hook
+        run: |
+          curl -X POST -d {} https://api.netlify.com/build_hooks/6918b6aa96bab20a176c7406
+          echo "✅ Netlify build triggered via build hook!"
+          echo "📦 Check build status: https://app.netlify.com"
+      
+      - name: Deployment Info
+        run: |
+          echo "🚀 Deployment initiated for testclient5250"
+          echo "🌐 Site will be live at: https://testclient5250.ttmenus.com"
+          echo "💡 Build hook bypasses Netlify GitHub integration SSH issues"
